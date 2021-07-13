@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WebSocket demo</title>
+        <title>Elisomat Servocontröller</title>
         <style type="text/css">
             body {
                 font-family: "Courier New", sans-serif;
@@ -27,8 +27,10 @@
     </head>
     <body>
         <div class="rpm">
+            <div>Elisomat Servöcontroller</div>
             <input class="target-rpm" type="number" min="-1000" max="1000" value="0">
             <input class="send-rpm" type="button" value="update">
+            <input class="autosend" type="checkbox" value="update">
             <figcaption><label for="target-rpm">motor RPM</label></figcaption>
         </div>
         <div class="display">
@@ -38,13 +40,20 @@
         <script>
             var send_button = document.querySelector('.send-rpm'),
                 panic_button = document.querySelector('.panic'),
+                autosend_check = document.querySelector('.autosend'),
                 rpm_value = document.querySelector('.actual-rpm'),
                 rpm_target_value = document.querySelector('.target-rpm'),
                 websocket = new WebSocket("ws://127.0.0.1:8765/");
 
             rpm_target_value.onchange = function (event) {
                 value = rpm_target_value.value
-                websocket.send(JSON.stringify({ action: 'rpm', value: value }));
+                if (autosend_check.checked) {
+                    websocket.send(JSON.stringify({ action: 'rpm', value: value }));
+                }
+            }
+
+            autosend_check.onclick = function (event) {
+                send_button.disabled = autosend_check.checked
             }
 
             panic_button.onclick = function (event) {
