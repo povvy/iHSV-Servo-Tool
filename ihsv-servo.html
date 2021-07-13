@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebSocket demo</title>
+        <style type="text/css">
+            body {
+                font-family: "Courier New", sans-serif;
+                text-align: center;
+            }    
+            .button {
+                line-height: 1;
+                padding: 2rem;
+                margin: 2rem;
+                min-height: 1em;
+                min-width: 1em;
+                cursor: pointer;
+                user-select: none;
+            }
+            .panic {
+                color: black;
+                background-color: red;
+                font-size: 3em;
+                height: 50vh;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rpm">
+            <input class="target-rpm" type="number" min="-1000" max="1000" value="0">
+            <input class="send-rpm" type="button" value="update">
+            <figcaption><label for="target-rpm">motor RPM</label></figcaption>
+        </div>
+        <div class="display">
+            <div class="actual-rpm">?</div>
+        </div>
+        <div class="panic button">HALT STOPP!!!!</div>
+        <script>
+            var send_button = document.querySelector('.send-rpm'),
+                panic_button = document.querySelector('.panic'),
+                rpm_value = document.querySelector('.actual-rpm'),
+                rpm_target_value = document.querySelector('.target-rpm'),
+                websocket = new WebSocket("ws://127.0.0.1:8765/");
+
+            rpm_target_value.onchange = function (event) {
+                value = rpm_target_value.value
+                websocket.send(JSON.stringify({ action: 'rpm', value: value }));
+            }
+
+            panic_button.onclick = function (event) {
+                websocket.send(JSON.stringify({ action: 'rpm', value: 0 }));
+            }
+
+            send_button.onclick = function (event) {
+                value = rpm_target_value.value
+                websocket.send(JSON.stringify({action: 'rpm', value: value}));
+            }
+            websocket.onmessage = function (event) {
+                data = JSON.parse(event.data);
+                switch (data.type) {
+                    case 'rpm':
+                        rpm_value.textContent = data.value;
+                        break;
+                    default:
+                        console.error(
+                            "unsupported event", data);
+                }
+            };
+        </script>
+    </body>
+</html>
