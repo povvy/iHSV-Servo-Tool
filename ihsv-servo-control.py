@@ -183,11 +183,13 @@ class ServoiHSV:
 
 if __name__ == '__main__':
     import argparse
+    import logging
     import asyncio
     import json
     import websockets
 
-    import random
+    
+    logging.basicConfig(level=logging.INFO)
 
     connected_clients = set()
  
@@ -213,8 +215,8 @@ if __name__ == '__main__':
                 data = json.loads(message)
                 if data["action"] == "rpm":
                    servo.write_parameter_speed('P04-02', int(data["value"])) 
-                # else:
-                #     logging.error("unsupported event: %s", data)
+                else:
+                    logging.error("unsupported event: %s", data)
         finally:
             pass
             # await connected_clients.remove(websocket)
@@ -237,30 +239,35 @@ if __name__ == '__main__':
         # parser.add_argument('--debug', '-d', default=[20], type=int, metavar='verbosity level', help='10 debug, 20 info, 30 warning, 40 error, 50 critical')
         return parser.parse_args()
 
-    args = parse_args()
+    try:
 
-    servo = ServoiHSV(args.port, args.version)  
+        args = parse_args()
 
+        servo = ServoiHSV(args.port, args.version)  
 
-    servo.read_live_data()
-    
-    if(args.rpm):
-        # set Source of rotational speed to digital Modbus command
-        servo.write_parameter_speed('P04-00', 1)
-        # write digital speed command
-        servo.write_parameter_speed('P04-02', int(args.rpm))
-
-    if(args.register):
-        register_value_pair = servo.parse_parameter(args.register[0], float(args.register[1]))
-        servo.write_parameter(register_value_pair["register"], register_value_pair["value"])
-
-    if(args.daemon):
-        # https://websockets.readthedocs.io/en/stable/intro.html
-        daemon_server = websockets.serve(run_deamon_socket, "localhost", 8765)
-        asyncio.get_event_loop().run_until_complete(daemon_server)
-        asyncio.get_event_loop().run_forever()
+        # servo.read_live_data()
+        # servo.dump_motor_parameters()
         
-    # servo.dump_motor_parameters()
-   
-    
-    servo.modbus.serial.close()
+        if(args.rpm):
+            # set Source of rotational speed to digital Modbus command
+            servo.write_parameter_speed('P04-00', 1)
+            # write digital speed command
+            servo.write_parameter_speed('P04-02', int(args.rpm))
+
+        if(args.register):
+            register_value_pair = servo.parse_parameter(args.register[0], float(args.register[1]))
+            servo.write_parameter(register_value_pair["register"], register_value_pair["value"])
+
+        if(args.daemon):
+            # https://websockets.readthedocs.io/en/stable/intro.html
+            daemon_server = websockets.serve(run_deamon_socket, "localhost", 8765)
+            asyncio.get_event_loop().run_until_complete(daemon_server)
+            asyncio.get_event_loop().run_forever()
+            logging.info("Running websocket daemon on localhost:8765...")
+
+
+    except (KeyboardInterrupt, SystemExit):
+
+        logging.info('\n\nExiting...')
+        servo.modbus.serial.close()
+        exit()    
