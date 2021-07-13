@@ -1,5 +1,8 @@
 # ihsv-servo-control.py
 
+## installation
+
+    pip install minimalmodbus websockets
 ## usage
 
 to write a register e.g. P04-02 for speed control use:
