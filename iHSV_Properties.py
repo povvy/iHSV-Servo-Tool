@@ -5419,7 +5419,7 @@ class iHSV:
                     "Max": "3",
                     "Description": "0：External analog instruction\n1：Digital command (parameters)\n2：Digital instruction\n(communication)\n3：Internal multiple sets of\ninstructions",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "True",
                     "Keep": "false"
@@ -5438,7 +5438,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "adjusting the polarity relations of  analog quantities\n0：Normal\n1：Polarity reversal",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "True",
                     "Keep": "false"
@@ -5457,7 +5457,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Setting range：-6000－6000，Unit：rpm\nWhen P04-00 is set to 1, P04-02 is the setting value of speed control.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -5476,7 +5476,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "0：No position clamping function\n1：has position clamping function\n When in the speed control mode,if meets the following conditions, it enters the lock-in mode.\nA：P04-03 set as 1\nB：Speed instruction absolute value is less than P04-04 setting threshold.\nC：The function of the external input port is set to 10 (zero position) and is in the valid state of input.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5495,7 +5495,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Setting ragne ：0-6000，Unit：rpm\nSet the speed instruction threshold for triggering zero speed position clamping function.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5514,7 +5514,7 @@ class iHSV:
                     "Max": "6500",
                     "Description": "Setting range ：0-6500，Unit：rpm\n Set the maximum allowed speed , exceeding the set value  AL.420 overspeed alarm.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -5533,7 +5533,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Setting range：0-6000，Unit：rpm\n\nLimit the positive speed of the motor.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -5552,7 +5552,7 @@ class iHSV:
                     "Max": "0",
                     "Description": "setting range：0- -6000，Unit：rpm\n\nLimiting motor reverse speed",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -5571,7 +5571,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5590,7 +5590,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5609,7 +5609,7 @@ class iHSV:
                     "Max": "200",
                     "Description": "Set range：0-200.0，Unit：rpm\nSetting the zero speed detection threshold value, if motor speed below the threshold can output  \"motor zero speed output\" signal\n  through the output port",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5628,7 +5628,7 @@ class iHSV:
                     "Max": "200",
                     "Description": "Set range：0-200.0，Unit：rpm\nSet motor rotation detection threshold, if motor speed is higher than the value can be displayed through the LED panel.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5647,7 +5647,7 @@ class iHSV:
                     "Max": "200",
                     "Description": "Set range：0-200.0，Unit：rpm\nSetting the threshold value of the speed consistent signal, when the difference between the motor speed and the command speed is within the threshold value, the \"speed consistent output\" signal can be output through the output port.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5666,7 +5666,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5685,7 +5685,7 @@ class iHSV:
                     "Max": "10000",
                     "Description": "Set range：0-10000，Unit：1ms/1000rpm\n\nSetting the acceleration of speed control",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -5704,7 +5704,7 @@ class iHSV:
                     "Max": "10000",
                     "Description": "Set range：0-10000，Unit：1ms/1000rpm\nSetting deceleration  in controlling speed",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -5723,7 +5723,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5742,7 +5742,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5761,7 +5761,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5780,7 +5780,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5799,7 +5799,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5818,7 +5818,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5837,7 +5837,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5856,7 +5856,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5875,7 +5875,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5894,7 +5894,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5913,7 +5913,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5932,7 +5932,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5951,7 +5951,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5970,7 +5970,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -5989,7 +5989,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Set range：-6000—6000，Unit：rpm\nParameters P04-30 to P04-37 respectively set internal speed 1 to internal speed 8 speed.\nThe internal speed switching method is as follows:\nWhen in the speed loop control mode, P04-00 is set at 3.\nThe corresponding input ports  are defined as 13, 14, 15.\nThe switching of internal speed is achieved by setting the input port function to 13, 14, 15 on-off state combination. The switching relationship is shown in the below table \nDI13 DI14 DI15 Action parameters\n0 0 0 P04-30\n1 0 0 P04-31\n0 1 0 P04-32\n1 1 0 P04-33\n0 0 1 P04-34\n1 0 1 P04-35\n0 1 1 P04-36\n1 1 1 P04-37",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6008,7 +6008,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Set range：-6000—6000，Unit：rpm\nParameters P04-30 to P04-37 respectively set internal speed 1 to internal speed 8 speed.\nThe internal speed switching method is as follows:\nWhen in the speed loop control mode, P04-00 is set at 3.\nThe corresponding input ports  are defined as 13, 14, 15.\nThe switching of internal speed is achieved by setting the input port function to 13, 14, 15 on-off state combination. The switching relationship is shown in the below table \nDI13 DI14 DI15 作用参数\n0 0 0 P04-30\n1 0 0 P04-31\n0 1 0 P04-32\n1 1 0 P04-33\n0 0 1 P04-34\n1 0 1 P04-35\n0 1 1 P04-36\n1 1 1 P04-37",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6027,7 +6027,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "设定范围：-6000—6000，单位：rpm\nParameters P04-30 to P04-37 respectively set internal speed 1 to internal speed 8 speed.\nThe internal speed switching method is as follows:\nWhen in the speed loop control mode, P04-00 is set at 3.\nThe corresponding input ports  are defined as 13, 14, 15.\nThe switching of internal speed is achieved by setting the input port function to 13, 14, 15 on-off state combination. The switching relationship is shown in the below table \nDI13 DI14 DI15 作用参数\n0 0 0 P04-30\n1 0 0 P04-31\n0 1 0 P04-32\n1 1 0 P04-33\n0 0 1 P04-34\n1 0 1 P04-35\n0 1 1 P04-36\n1 1 1 P04-37",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6046,7 +6046,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Set range ：-6000—6000，Unit：rpm\nParameters P04-30 to P04-37 respectively set internal speed 1 to internal speed 8 speed.\nThe internal speed switching method is as follows:\nWhen in the speed loop control mode, P04-00 is set at 3.\nThe corresponding input ports  are defined as 13, 14, 15.\nThe switching of internal speed is achieved by setting the input port function to 13, 14, 15 on-off state combination. The switching relationship is shown in the below table \nDI13 DI14 DI15 Action parameters\n0 0 0 P04-30\n1 0 0 P04-31\n0 1 0 P04-32\n1 1 0 P04-33\n0 0 1 P04-34\n1 0 1 P04-35\n0 1 1 P04-36\n1 1 1 P04-37",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6065,7 +6065,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Set range：-6000—6000，Unit：rpm\n参数P04-30至P04-37分别设定内部转速1到内部转速8的转速\n内部转速切换实现方法如下:\n当速度环控制时，P04-00设3，\n相应的输入端口功能定义为13、14、15\n内部转速的切换是通过输入端口功能设定为13、14、15通断状态组合来实现内部转速的切换，切换关系如下表所示\nDI13 DI14 DI15 作用参数\n0 0 0 P04-30\n1 0 0 P04-31\n0 1 0 P04-32\n1 1 0 P04-33\n0 0 1 P04-34\n1 0 1 P04-35\n0 1 1 P04-36\n1 1 1 P04-37",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6084,7 +6084,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Set range ：-6000—6000，Unit：rpm\nParameters P04-30 to P04-37 respectively set internal speed 1 to internal speed 8 speed.\nThe internal speed switching method is as follows:\nWhen in the speed loop control mode, P04-00 is set at 3.\nThe corresponding input ports  are defined as 13, 14, 15.\nThe switching of internal speed is achieved by setting the input port function to 13, 14, 15 on-off state combination. The switching relationship is shown in the below table \nDI13 DI14 DI15 作用参数\n0 0 0 P04-30\n1 0 0 P04-31\n0 1 0 P04-32\n1 1 0 P04-33\n0 0 1 P04-34\n1 0 1 P04-35\n0 1 1 P04-36\n1 1 1 P04-37",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6103,7 +6103,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Set range：-6000—6000，Unit：rpm\nParameters P04-30 to P04-37 respectively set internal speed 1 to internal speed 8 speed.\nThe internal speed switching method is as follows:\nWhen in the speed loop control mode, P04-00 is set at 3.\nThe corresponding input ports  are defined as 13, 14, 15.\nThe switching of internal speed is achieved by setting the input port function to 13, 14, 15 on-off state combination. The switching relationship is shown in the below table \nDI13 DI14 DI15 Action parameters\n0 0 0 P04-30\n1 0 0 P04-31\n0 1 0 P04-32\n1 1 0 P04-33\n0 0 1 P04-34\n1 0 1 P04-35\n0 1 1 P04-36\n1 1 1 P04-37",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6122,7 +6122,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Set range：-6000—6000，Unit：rpm\nParameters P04-30 to P04-37 respectively set internal speed 1 to internal speed 8 speed.\nThe internal speed switching method is as follows:\nWhen in the speed loop control mode, P04-00 is set at 3.\nThe corresponding input ports  are defined as 13, 14, 15.\nThe switching of internal speed is achieved by setting the input port function to 13, 14, 15 on-off state combination. The switching relationship is shown in the below table \nDI13 DI14 DI15 作用参数\n0 0 0 P04-30\n1 0 0 P04-31\n0 1 0 P04-32\n1 1 0 P04-33\n0 0 1 P04-34\n1 0 1 P04-35\n0 1 1 P04-36\n1 1 1 P04-37",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6141,7 +6141,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6160,7 +6160,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6179,7 +6179,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6198,7 +6198,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6217,7 +6217,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6236,7 +6236,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6255,7 +6255,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6274,7 +6274,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6293,7 +6293,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6312,7 +6312,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6331,7 +6331,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6350,7 +6350,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6369,7 +6369,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6388,7 +6388,7 @@ class iHSV:
                     "Max": "100",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6407,7 +6407,7 @@ class iHSV:
                     "Max": "100",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6426,7 +6426,7 @@ class iHSV:
                     "Max": "32767",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6447,7 +6447,7 @@ class iHSV:
                     "Max": "3",
                     "Description": "0: external analog instruction (speed limit amplitude set by P05-02)\n\n1: digital instruction (speed limit amplitude set by P05-02)\n\n2: external analog instruction (speed limit amplitude determined by speed analog instruction).\n\n3: digital instruction (speed limit amplitude determined by speed analog instruction).",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "True",
                     "Keep": "true"
@@ -6466,7 +6466,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Used to adjust torque direction\n\n0: normal\n\n1: direction reversal",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "True",
                     "Keep": "true"
@@ -6485,7 +6485,7 @@ class iHSV:
                     "Max": "6000",
                     "Description": "Set range: 0- maximum speed, unit: RPM\n\nSetting the maximum speed of motor in torque mode to prevent mechanical damage caused by high speed of motor in no-load condition\n\nTorque control mode effective",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6504,7 +6504,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6523,7 +6523,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6542,7 +6542,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Source for adjusting torque limiting amplitude\n\n0: internal digital quantity (set by P05-10, P05-11 or P05-12, P05-13)\n\n1: external analog (T-REF input from external analog input). In this mode, the amplitude of the positive and negative directions is the same.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "True",
                     "Keep": "true"
@@ -6561,7 +6561,7 @@ class iHSV:
                     "Max": "10000",
                     "Description": "Set range: 0-10000, unit: ms\n\nSet DO port output torque limit to detect delay time of output signal.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6580,7 +6580,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6599,7 +6599,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6618,7 +6618,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6637,7 +6637,7 @@ class iHSV:
                     "Max": "300.0",
                     "Description": "Setting range: 0-300.0, unit: 1%\n\nLimit the positive output of motor, 100 indicates 1 times torque, 300 indicates 3 times torque.\n\nWhen the torque output reaches the limit value, the output signal can be detected through the output torque limit of the DO port.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "1",
+                    "decimal_place": "1",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -6656,7 +6656,7 @@ class iHSV:
                     "Max": "0",
                     "Description": "Setting range: 0-300.0, unit: 1%\n\nLimit motor reverse output, 100 represents 1 times torque, 300 indicates 3 times torque.\n\nWhen the torque output reaches the limit value, the output signal can be detected through the output torque limit of the DO port.",
                     "Symbol": "True",
-                    "Demical_Place": "1",
+                    "decimal_place": "1",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -6675,7 +6675,7 @@ class iHSV:
                     "Max": "300.0",
                     "Description": "Setting range: 0-300.0, unit: 1%\n\nThis function needs to be switched using an external input port in CN1, and the selected DI port input port function selection is set to 7 (forward side external torque limit). Controlling the logical state of the port can switch the control mode.\n\n\n\nTerminal logic    torque limit amplitude\n\nEffective    external limiting amplitude P05-12\n\nInvalid     internal limiting amplitude P05-10\n\n\n\nIf the DI function is not allocated, the default torque limit of the system is P05-10.\n\nWhen the torque output reaches the limit value, the output signal can be detected through the output torque limit of the DO port.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "1",
+                    "decimal_place": "1",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6694,7 +6694,7 @@ class iHSV:
                     "Max": "0",
                     "Description": "Setting range: 0-300.0, unit: 1%\n\nThis function needs to be switched using an external input port in CN1, and the selected DI port input port function selection is set to 8 (Reverse Side External Torque Limit). Controlling the logical state of the port can switch the control mode.\n\n\n\nTerminal   logic torque limit amplitude\n\nEffective   external limiting amplitude P05-13\n\nInvalid   internal limiting amplitude P05-11\n\n\n\nIf the DI function is not allocated, the default torque limit of the system is P05-11.\n\nWhen the torque output reaches the limit value, the output signal can be detected through the output torque limit of the DO port.\nReport errors",
                     "Symbol": "True",
-                    "Demical_Place": "1",
+                    "decimal_place": "1",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -6713,7 +6713,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6732,7 +6732,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6751,7 +6751,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6770,7 +6770,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6789,7 +6789,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6808,7 +6808,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6827,7 +6827,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6846,7 +6846,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6865,7 +6865,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6884,7 +6884,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6903,7 +6903,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6922,7 +6922,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6941,7 +6941,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6960,7 +6960,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6979,7 +6979,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -6998,7 +6998,7 @@ class iHSV:
                     "Max": "",
                     "Description": "",
                     "Symbol": "",
-                    "Demical_Place": "",
+                    "decimal_place": "",
                     "Permission": "0",
                     "Shutdown_setting": "",
                     "Keep": "true"
@@ -7017,7 +7017,7 @@ class iHSV:
                     "Max": "512",
                     "Description": "---",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7036,7 +7036,7 @@ class iHSV:
                     "Max": "512",
                     "Description": "---",
                     "Symbol": "True",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7057,7 +7057,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4, factory settings: 0\n\nSet the valid input of the DI1 input port of CN1.\n\n0: low level active (optical coupler).\n\n1: stands for high level efficiency (optocoupler cut-off).\n\n2: rising edge effective\n\n3: falling edge effective\n\n4: rising and falling edge are all effective.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -7076,7 +7076,7 @@ class iHSV:
                     "Max": "24",
                     "Description": "Set range: 0-18, factory settings: 1\n\nSet the function of CN1's DI1 input port.\n\n0: pins invalid\n\n1: servo ON\n\n2: alarm clearance\n\n3: forward overshoot signal input\n\n4: reverse overshoot signal input\n\n5: control mode switching\n\n6:P action instruction input\n\n7: positive external torque limitation.\n\n8: reverse side torque limit.\n\n9: gain switching input\n\n10: zero position fixed input\n\n11: instruction pulse prohibit input\n\n12: encoder absolute value data input\n\n13: internal setting speed switching input 1\n\n14: internal setting speed switching input 2\n\n15: internal setting speed switching input 3\n\n16: location command zero input\n\n17: magnetic pole detection input\n\n18: instruction pulse input multiplying switching input\n\n19: Longmen mobile enabling\n\n20: Longmen counterpoint zero clearing signal\n\n21: origin switch signal\n\n22: origin return to start signal\n\n23: speed analog command direction input\n\n24: torque analog instruction direction input",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7095,7 +7095,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4, factory settings: 0\n\nSet the valid input of the DI1 input port of CN1.\n\n0: low level active (optical coupler).\n\n1: stands for high level efficiency (optocoupler cut-off).\n\n2: rising edge effective\n\n3: falling edge effective\n\n4: rising and falling edge are all effective.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7114,7 +7114,7 @@ class iHSV:
                     "Max": "24",
                     "Description": "设定范围：0-18，出厂设置：1\n设定CN1的DI1输入端口的功能\n0：管脚无效 \n1：伺服ON\n2：报警清除\n3：正向超程信号输入\n4：反向超程信号输入\n5：控制模式切换\n6：P动作指令输入\n7：正转侧外部转矩限制\n8：反转侧外部转矩限制\n9：增益切换输入\n10：零位固定输入\n11：指令脉冲禁止输入\n12：编码器绝对值数据要求输入\n13：内部设定速度切换输入1\n14：内部设定速度切换输入2\n15：内部设定速度切换输入3\n16：位置命令清零输入\n17：磁极检出输入\n18：指令脉冲输入倍率切换输入\n19：龙门同动使能\n20：龙门对位清零信号\n21：原点开关信号\n22：原点复归启动信号\n23：速度模拟指令方向输入\n24：转矩模拟指令方向输入",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7133,7 +7133,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4, factory settings: 0\n\nSet the valid input of the DI1 input port of CN1.\n\n0: low level active (optical coupler).\n\n1: stands for high level efficiency (optocoupler cut-off).\n\n2: rising edge effective\n\n3: falling edge effective\n\n4: rising and falling edge are all effective.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7152,7 +7152,7 @@ class iHSV:
                     "Max": "24",
                     "Description": "设定范围：0-18，出厂设置：1\n设定CN1的DI1输入端口的功能\n0：管脚无效 \n1：伺服ON\n2：报警清除\n3：正向超程信号输入\n4：反向超程信号输入\n5：控制模式切换\n6：P动作指令输入\n7：正转侧外部转矩限制\n8：反转侧外部转矩限制\n9：增益切换输入\n10：零位固定输入\n11：指令脉冲禁止输入\n12：编码器绝对值数据要求输入\n13：内部设定速度切换输入1\n14：内部设定速度切换输入2\n15：内部设定速度切换输入3\n16：位置命令清零输入\n17：磁极检出输入\n18：指令脉冲输入倍率切换输入\n19：龙门同动使能\n20：龙门对位清零信号\n21：原点开关信号\n22：原点复归启动信号\n23：速度模拟指令方向输入\n24：转矩模拟指令方向输入",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7171,7 +7171,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4, factory settings: 0\n\nSet the valid input of the DI1 input port of CN1.\n\n0: low level active (optical coupler).\n\n1: stands for high level efficiency (optocoupler cut-off).\n\n2: rising edge effective\n\n3: falling edge effective\n\n4: rising and falling edge are all effective.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7190,7 +7190,7 @@ class iHSV:
                     "Max": "24",
                     "Description": "Set range: 0-18, factory settings: 1\n\nSet the function of CN1's DI1 input port.\n\n0: pins invalid\n\n1: servo ON\n\n2: alarm clearance\n\n3: forward overshoot signal input\n\n4: reverse overshoot signal input\n\n5: control mode switching\n\n6:P action instruction input\n\n7: positive external torque limitation.\n\n8: reverse side torque limit.\n\n9: gain switching input\n\n10: zero position fixed input\n\n11: instruction pulse prohibit input\n\n12: encoder absolute value data input\n\n13: internal setting speed switching input 1\n\n14: internal setting speed switching input 2\n\n15: internal setting speed switching input 3\n\n16: location command zero input\n\n17: magnetic pole detection input\n\n18: instruction pulse input multiplying switching input\n\n19: Longmen mobile enabling\n\n20: Longmen counterpoint zero clearing signal\n\n21: origin switch signal\n\n22: origin return to start signal\n\n23: speed analog command direction input\n\n24: torque analog instruction direction input",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7209,7 +7209,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4, factory settings: 0\n\nSet the valid input of the DI1 input port of CN1.\n\n0: low level active (optical coupler).\n\n1: stands for high level efficiency (optocoupler cut-off).\n\n2: rising edge effective\n\n3: falling edge effective\n\n4: rising and falling edge are all effective.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7228,7 +7228,7 @@ class iHSV:
                     "Max": "24",
                     "Description": "Set range: 0-18, factory settings: 1\n\nSet the function of CN1's DI1 input port.\n\n0: pins invalid\n\n1: servo ON\n\n2: alarm clearance\n\n3: forward overshoot signal input\n\n4: reverse overshoot signal input\n\n5: control mode switching\n\n6:P action instruction input\n\n7: positive external torque limitation.\n\n8: reverse side torque limit.\n\n9: gain switching input\n\n10: zero position fixed input\n\n11: instruction pulse prohibit input\n\n12: encoder absolute value data input\n\n13: internal setting speed switching input 1\n\n14: internal setting speed switching input 2\n\n15: internal setting speed switching input 3\n\n16: location command zero input\n\n17: magnetic pole detection input\n\n18: instruction pulse input multiplying switching input\n\n19: Longmen mobile enabling\n\n20: Longmen counterpoint zero clearing signal\n\n21: origin switch signal\n\n22: origin return to start signal\n\n23: speed analog command direction input\n\n24: torque analog instruction direction input",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7247,7 +7247,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4, factory settings: 0\n\nSet the valid input of the DI1 input port of CN1.\n\n0: low level active (optical coupler).\n\n1: stands for high level efficiency (optocoupler cut-off).\n\n2: rising edge effective\n\n3: falling edge effective\n\n4: rising and falling edge are all effective.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7266,7 +7266,7 @@ class iHSV:
                     "Max": "24",
                     "Description": "Set range: 0-18, factory settings: 1\n\nSet the function of CN1's DI1 input port.\n\n0: pins invalid\n\n1: servo ON\n\n2: alarm clearance\n\n3: forward overshoot signal input\n\n4: reverse overshoot signal input\n\n5: control mode switching\n\n6:P action instruction input\n\n7: positive external torque limitation.\n\n8: reverse side torque limit.\n\n9: gain switching input\n\n10: zero position fixed input\n\n11: instruction pulse prohibit input\n\n12: encoder absolute value data input\n\n13: internal setting speed switching input 1\n\n14: internal setting speed switching input 2\n\n15: internal setting speed switching input 3\n\n16: location command zero input\n\n17: magnetic pole detection input\n\n18: instruction pulse input multiplying switching input\n\n19: Longmen mobile enabling\n\n20: Longmen counterpoint zero clearing signal\n\n21: origin switch signal\n\n22: origin return to start signal\n\n23: speed analog command direction input\n\n24: torque analog instruction direction input",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7285,7 +7285,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4, factory settings: 0\n\nSet the valid input of the DI1 input port of CN1.\n\n0: low level active (optical coupler).\n\n1: stands for high level efficiency (optocoupler cut-off).\n\n2: rising edge effective\n\n3: falling edge effective\n\n4: rising and falling edge are all effective.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7304,7 +7304,7 @@ class iHSV:
                     "Max": "24",
                     "Description": "Set range: 0-18, factory settings: 1\n\nSet the function of CN1's DI1 input port.\n\n0: pins invalid\n\n1: servo ON\n\n2: alarm clearance\n\n3: forward overshoot signal input\n\n4: reverse overshoot signal input\n\n5: control mode switching\n\n6:P action instruction input\n\n7: positive external torque limitation.\n\n8: reverse side torque limit.\n\n9: gain switching input\n\n10: zero position fixed input\n\n11: instruction pulse prohibit input\n\n12: encoder absolute value data input\n\n13: internal setting speed switching input 1\n\n14: internal setting speed switching input 2\n\n15: internal setting speed switching input 3\n\n16: location command zero input\n\n17: magnetic pole detection input\n\n18: instruction pulse input multiplying switching input\n\n19: Longmen mobile enabling\n\n20: Longmen counterpoint zero clearing signal\n\n21: origin switch signal\n\n22: origin return to start signal\n\n23: speed analog command direction input\n\n24: torque analog instruction direction input",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7323,7 +7323,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7342,7 +7342,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7361,7 +7361,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4, factory settings: 0\n\nSet the valid input of the DI1 input port of CN1.\n\n0: low level active (optical coupler).\n\n1: stands for high level efficiency (optocoupler cut-off).\n\n2: rising edge effective\n\n3: falling edge effective\n\n4: rising and falling edge are all effective.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7380,7 +7380,7 @@ class iHSV:
                     "Max": "24",
                     "Description": "Set range: 0-18, factory settings: 1\n\nSet the function of CN1's DI1 input port.\n\n0: pins invalid\n\n1: servo ON\n\n2: alarm clearance\n\n3: forward overshoot signal input\n\n4: reverse overshoot signal input\n\n5: control mode switching\n\n6:P action instruction input\n\n7: positive external torque limitation.\n\n8: reverse side torque limit.\n\n9: gain switching input\n\n10: zero position fixed input\n\n11: instruction pulse prohibit input\n\n12: encoder absolute value data input\n\n13: internal setting speed switching input 1\n\n14: internal setting speed switching input 2\n\n15: internal setting speed switching input 3\n\n16: location command zero input\n\n17: magnetic pole detection input\n\n18: instruction pulse input multiplying switching input\n\n19: Longmen mobile enabling\n\n20: Longmen counterpoint zero clearing signal\n\n21: origin switch signal\n\n22: origin return to start signal\n\n23: speed analog command direction input\n\n24: torque analog instruction direction input",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7399,7 +7399,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7418,7 +7418,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7437,7 +7437,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Set range: 0-1, factory settings: 1\n\n0: when the state is valid, optocoupler cut-off.\n\n1: when the state is valid, the optical coupler turns on.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -7456,7 +7456,7 @@ class iHSV:
                     "Max": "3",
                     "Description": "Set range: 0-11, factory settings: 3\n\n0: pins invalid\n\n1: alarm output\n\n2: brake opening output\n\n3: servo ready output\n\n4: positioning and output.\n\n5: positioning close to output\n\n6: speed consistent output\n\n7: Motor zero speed output\n\n8: torque limit detection output\n\n9: speed limit detection output\n\n10: warning output\n\n11: instruction pulse input rate switching output.\n\n12: origin regression completes output.\n\n13: Electrical origin regression completes output.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7475,7 +7475,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Set range: 0-1, factory settings: 1\n\n0: when the state is valid, optocoupler cut-off.\n\n1: when the state is valid, the optical coupler turns on.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "false"
@@ -7494,7 +7494,7 @@ class iHSV:
                     "Max": "2",
                     "Description": "Set range: 0-11, factory settings: 3\n\n0: pins invalid\n\n1: alarm output\n\n2: brake opening output\n\n3: servo ready output\n\n4: positioning and output.\n\n5: positioning close to output\n\n6: speed consistent output\n\n7: Motor zero speed output\n\n8: torque limit detection output\n\n9: speed limit detection output\n\n10: warning output\n\n11: instruction pulse input rate switching output.\n\n12: origin regression completes output.\n\n13: Electrical origin regression completes output.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7513,7 +7513,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Set range: 0-1, factory settings: 1\n\n0: when the state is valid, optocoupler cut-off.\n\n1: when the state is valid, the optical coupler turns on.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7532,7 +7532,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Set range: 0-11, factory settings: 3\n\n0: pins invalid\n\n1: alarm output\n\n2: brake opening output\n\n3: servo ready output\n\n4: positioning and output.\n\n5: positioning close to output\n\n6: speed consistent output\n\n7: Motor zero speed output\n\n8: torque limit detection output\n\n9: speed limit detection output\n\n10: warning output\n\n11: instruction pulse input rate switching output.\n\n12: origin regression completes output.\n\n13: Electrical origin regression completes output.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7551,7 +7551,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Set range: 0-1, factory settings: 1\n\n0: when the state is valid, optocoupler cut-off.\n\n1: when the state is valid, the optical coupler turns on.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7570,7 +7570,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-11, factory settings: 3\n\n0: pins invalid\n\n1: alarm output\n\n2: brake opening output\n\n3: servo ready output\n\n4: positioning and output.\n\n5: positioning close to output\n\n6: speed consistent output\n\n7: Motor zero speed output\n\n8: torque limit detection output\n\n9: speed limit detection output\n\n10: warning output\n\n11: instruction pulse input rate switching output.\n\n12: origin regression completes output.\n\n13: Electrical origin regression completes output.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7589,7 +7589,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Set range: 0-1, factory settings: 1\n\n0: when the state is valid, optocoupler cut-off.\n\n1: when the state is valid, the optical coupler turns on.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7608,7 +7608,7 @@ class iHSV:
                     "Max": "8",
                     "Description": "Set range: 0-11, factory settings: 3\n\n0: pins invalid\n\n1: alarm output\n\n2: brake opening output\n\n3: servo ready output\n\n4: positioning and output.\n\n5: positioning close to output\n\n6: speed consistent output\n\n7: Motor zero speed output\n\n8: torque limit detection output\n\n9: speed limit detection output\n\n10: warning output\n\n11: instruction pulse input rate switching output.\n\n12: origin regression completes output.\n\n13: Electrical origin regression completes output.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7627,7 +7627,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7646,7 +7646,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7665,7 +7665,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7684,7 +7684,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7703,7 +7703,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7722,7 +7722,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7741,7 +7741,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7760,7 +7760,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7779,7 +7779,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7798,7 +7798,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7817,7 +7817,7 @@ class iHSV:
                     "Max": "2000",
                     "Description": "Set range: 10-2000, unit 1rpm/V\n\nSet the coefficients between analog input and speed control instructions for CN1 input.\n\nExample: 500 represents 500 revolutions per minute for each V.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7836,7 +7836,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "Set range: 0 to 6. 4, unit: ms\n\nSet the analog instruction filter time coefficient of CN1 input.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "1",
+                    "decimal_place": "1",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7855,7 +7855,7 @@ class iHSV:
                     "Max": "10.000",
                     "Description": "Set range: - 10 000 - 10 000, unit V\n\nSet the zero offset of analog input for CN1 input.",
                     "Symbol": "true",
-                    "Demical_Place": "3",
+                    "decimal_place": "3",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7874,7 +7874,7 @@ class iHSV:
                     "Max": "100.0",
                     "Description": "Set range: 0 to 100. 0, unit 1%\n\nSet the coefficients between analog input and speed control instructions for CN1 input.\n\nFor example: 30 represents 30% rated torque per V.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "1",
+                    "decimal_place": "1",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7893,7 +7893,7 @@ class iHSV:
                     "Max": "64.00",
                     "Description": "Set range: 0 to 6. 4, unit: ms\n\nSet the analog instruction filter time coefficient of CN1 input.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "2",
+                    "decimal_place": "2",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7912,7 +7912,7 @@ class iHSV:
                     "Max": "10.000",
                     "Description": "Set range: - 10 000 - 10 000, unit V\n\nSet the zero offset of analog input for CN1 input.",
                     "Symbol": "true",
-                    "Demical_Place": "3",
+                    "decimal_place": "3",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7931,7 +7931,7 @@ class iHSV:
                     "Max": "10.000",
                     "Description": "Set range: 0 to 10 000, unit V\n\nSet the dead-time voltage of the speed analog command, and the system defaults to zero when the analog is given in the range of positive and negative values.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "3",
+                    "decimal_place": "3",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7950,7 +7950,7 @@ class iHSV:
                     "Max": "10.000",
                     "Description": "Set range: 0 to 10 000, unit V\n\nSetting the dead-time voltage of the torque analog command, the system defaults to zero when the analog is given within the range of positive and negative values.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "3",
+                    "decimal_place": "3",
                     "Permission": "0",
                     "Shutdown_setting": "false",
                     "Keep": "true"
@@ -7971,7 +7971,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -7990,7 +7990,7 @@ class iHSV:
                     "Max": "1",
                     "Description": "Set range: 0-1\n\n0: effective\n\n1: null and void",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8009,7 +8009,7 @@ class iHSV:
                     "Max": "2000",
                     "Description": "Set range: 100-2000, unit: RPM\n\nWhen the off-line inertia is identified, the maximum speed of the motor is obtained.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8028,7 +8028,7 @@ class iHSV:
                     "Max": "800",
                     "Description": "Set range: 20-800, unit: ms\n\nWhen the off-line inertia is identified, the acceleration and deceleration time of the motor",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8047,7 +8047,7 @@ class iHSV:
                     "Max": "10000",
                     "Description": "Set range: 50-10000, unit: ms\n\nWhen off-line inertia is identified, waiting time after completion of single inertia identification is completed.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8066,7 +8066,7 @@ class iHSV:
                     "Max": "655.35",
                     "Description": "This parameter is the number of turning circles automatically generated according to the setting conditions of P08-02, P08-03 and P08-04.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "2",
+                    "decimal_place": "2",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8085,7 +8085,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8104,7 +8104,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8123,7 +8123,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8142,7 +8142,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8161,7 +8161,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8180,7 +8180,7 @@ class iHSV:
                     "Max": "4",
                     "Description": "Set range: 0-4\n\nSet range: 0-4\n\nThird, fourth notch filter parameters are no longer automatically updated, save as the current value. But allow manual input.\n\n1:1 adaptive notch filter is effective. Third notch filter parameters can be updated automatical",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8199,7 +8199,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8218,7 +8218,7 @@ class iHSV:
                     "Max": "7",
                     "Description": "This parameter sets the sensitivity of adaptive notch filter to detect vibration. The smaller the parameter, the more sensitive the sensitivity is.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8237,7 +8237,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8256,7 +8256,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8275,7 +8275,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8294,7 +8294,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "1",
+                    "decimal_place": "1",
                     "Permission": "0",
                     "Shutdown_setting": "faLSE",
                     "Keep": "true"
@@ -8313,7 +8313,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8332,7 +8332,7 @@ class iHSV:
                     "Max": "25.00",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "2",
+                    "decimal_place": "2",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "false"
@@ -8351,7 +8351,7 @@ class iHSV:
                     "Max": "25.00",
                     "Description": "Setting range: 0-25.00, unit: ms\n\nTorque command filter time constant. When the motor starts screaming, it can be set up appropriately.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "2",
+                    "decimal_place": "2",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "false"
@@ -8370,7 +8370,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8389,7 +8389,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8408,7 +8408,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8427,7 +8427,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8446,7 +8446,7 @@ class iHSV:
                     "Max": "100.0",
                     "Description": "Setting range: 0-100.0\n\nThe disturbance torque observation is worth the gain coefficient. The greater the value, the stronger the ability to resist disturbance torque, but the action noise may also increase.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "1",
+                    "decimal_place": "1",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "false"
@@ -8465,7 +8465,7 @@ class iHSV:
                     "Max": "25.0",
                     "Description": "Setting range: 0-25.00, unit: ms\n\nThe larger the numerical value, the stronger the filtering effect and suppressing the action noise. However, excessive phase leads to phase delay, which affects the effect of disturbance torque suppression.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "2",
+                    "decimal_place": "2",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "false"
@@ -8484,7 +8484,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8503,7 +8503,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8522,7 +8522,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8541,7 +8541,7 @@ class iHSV:
                     "Max": "5000",
                     "Description": "Set range: 50-5000, unit: Hz\n\nCentral frequency of notch filter 1\n\nThe notch filter is invalid when set to 5000.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8560,7 +8560,7 @@ class iHSV:
                     "Max": "20",
                     "Description": "Set range: 0-20\n\nNotch width rating of notch filter 1\n\nRatio of width to center frequency",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8579,7 +8579,7 @@ class iHSV:
                     "Max": "99",
                     "Description": "Set range: 0-99\n\nNotch depth level of notch filter 1\n\nThe ratio relationship between the input and output of the notch center frequency.\n\nThe larger the parameter, the smaller the notch depth and the weaker the effect.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8598,7 +8598,7 @@ class iHSV:
                     "Max": "5000",
                     "Description": "Set range: 50-5000, unit: Hz\n\nCentral frequency of notch filter 1\n\nThe notch filter is invalid when set to 5000.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8617,7 +8617,7 @@ class iHSV:
                     "Max": "20",
                     "Description": "Set range: 0-20\n\nNotch width rating of notch filter 1\n\nRatio of width to center frequency",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8636,7 +8636,7 @@ class iHSV:
                     "Max": "99",
                     "Description": "Set range: 0-99\n\nNotch depth level of notch filter 1\n\nThe ratio relationship between the input and output of the notch center frequency.\n\nThe larger the parameter, the smaller the notch depth and the weaker the effect.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8655,7 +8655,7 @@ class iHSV:
                     "Max": "5000",
                     "Description": "Set range: 50-5000, unit: Hz\n\nCentral frequency of notch filter 1\n\nThe notch filter is invalid when set to 5000.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8674,7 +8674,7 @@ class iHSV:
                     "Max": "20",
                     "Description": "Set range: 0-20\n\nNotch width rating of notch filter 1\n\nRatio of width to center frequency",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8693,7 +8693,7 @@ class iHSV:
                     "Max": "99",
                     "Description": "Set range: 0-99\n\nNotch depth level of notch filter 1\n\nThe ratio relationship between the input and output of the notch center frequency.\n\nThe larger the parameter, the smaller the notch depth and the weaker the effect.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8712,7 +8712,7 @@ class iHSV:
                     "Max": "5000",
                     "Description": "Set range: 50-5000, unit: Hz\n\nCentral frequency of notch filter 1\n\nThe notch filter is invalid when set to 5000.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8731,7 +8731,7 @@ class iHSV:
                     "Max": "20",
                     "Description": "Set range: 0-20\n\nNotch width rating of notch filter 1\n\nRatio of width to center frequency",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8750,7 +8750,7 @@ class iHSV:
                     "Max": "99",
                     "Description": "Set range: 0-99\n\nNotch depth level of notch filter 1\n\nThe ratio relationship between the input and output of the notch center frequency.\n\nThe larger the parameter, the smaller the notch depth and the weaker the effect.",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "0",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -8771,7 +8771,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8790,7 +8790,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8809,7 +8809,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8828,7 +8828,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8847,7 +8847,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8866,7 +8866,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8885,7 +8885,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8904,7 +8904,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8923,7 +8923,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8942,7 +8942,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8961,7 +8961,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8980,7 +8980,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -8999,7 +8999,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9018,7 +9018,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9037,7 +9037,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9056,7 +9056,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9075,7 +9075,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9094,7 +9094,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "faLSE",
                     "Keep": "TRUE"
@@ -9113,7 +9113,7 @@ class iHSV:
                     "Max": "10",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -9132,7 +9132,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9151,7 +9151,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9170,7 +9170,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -9189,7 +9189,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -9208,7 +9208,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "true"
@@ -9227,7 +9227,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9246,7 +9246,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9265,7 +9265,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9284,7 +9284,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9303,7 +9303,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9322,7 +9322,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
@@ -9341,7 +9341,7 @@ class iHSV:
                     "Max": "65535",
                     "Description": "---",
                     "Symbol": "FALSE",
-                    "Demical_Place": "0",
+                    "decimal_place": "0",
                     "Permission": "10",
                     "Shutdown_setting": "FALSE",
                     "Keep": "TRUE"
