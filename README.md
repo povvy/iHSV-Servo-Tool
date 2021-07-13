@@ -1,3 +1,15 @@
+# ihsv-servo-control.py
+
+## usage
+
+to write a register e.g. P04-02 for speed control use:
+
+    python ihsv-servo-control.py -p /dev/ttyUSB0 -r P04-02 23
+
+start daemon websocket on localhost:8765
+
+    python ihsv-servo-control.py -p /dev/ttyUSB0 -d
+
 # iHSV-Servo-Tool
 
 Python3-based tool to monitor and tune JMC iHSV servos.
@@ -11,7 +23,9 @@ You will need Python3, PyQt5, PyQtGraph, PySerial, Numpy and MinimalModbus.
 ### Linux
 
 * sudo apt install python3 python3-pip python3-pyqt5 python3-pyqt5.qtserialport python3-serial python3-pyqtgraph python3-numpy python3-setuptools
-* pip3 install minimalmodbus
+
+* sudo pacman -S python-pyqt5 qt5-serialbus
+* pip3 install pyqtgraph minimalmodbus
 
 ### Windows
 
