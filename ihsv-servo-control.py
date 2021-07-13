@@ -261,9 +261,9 @@ if __name__ == '__main__':
         if(args.daemon):
             # https://websockets.readthedocs.io/en/stable/intro.html
             daemon_server = websockets.serve(run_deamon_socket, "localhost", 8765)
+            logging.info("Running websocket daemon on localhost:8765...")
             asyncio.get_event_loop().run_until_complete(daemon_server)
             asyncio.get_event_loop().run_forever()
-            logging.info("Running websocket daemon on localhost:8765...")
 
 
     except (KeyboardInterrupt, SystemExit):
